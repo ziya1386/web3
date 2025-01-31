@@ -1,0 +1,110 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+ }
+ body{
+    background-color: #120d24;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+ }
+ .card{
+    width: 220px;
+    height: 340px;
+    border-radius: 12px;
+    transform-style: preserve-3d ;
+ }
+ .card.brown{
+    background:linear-gradient(135deg,#09afff,#125575);
+ }
+ .card.red{
+    background: linear-gradient(135deg ,#5911f2, #290987);
+ }
+ .card.brown1{
+    background: linear-gradient(135deg ,#f28911,#703c01);
+ }
+ .card.black{
+    background: linear-gradient(135deg ,#94f211,#497d00);
+ }
+ .card .product{
+    height: 85%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+ }
+ .card .number{
+    font-size: 80px;
+    line-height: 80px;
+    font-style: initial;
+    opacity: 0.25;
+    direction: ltr;
+ }
+ .card .ontisuka{
+    font-size: 35px;
+    line-height:35px ;
+    font-style: initial;
+    opacity: 0.7;
+    direction: ltr;
+ }
+ .card img{
+    height: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate3d(-35%,-45%,0);
+    pointer-events: none;
+ }
+ .card .price{
+    background-color: rgba(255,255,255,0.15);
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: -20px;
+    padding: 5px 20px;
+    border-radius: 99px 0 0 99px;
+ }
+ .card .title{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 12px 12px;
+ }
+ .card.brown .title {
+    background-color: #039be5;
+ }
+ .card.red .title {
+    background-color: #5b1ae3;
+ }
+ .card.brown1 .title {
+    background-color: #c86a00;
+ }
+ .card.black .title {
+    background-color: #6db40a;
+ }
+ .card:hover .product img{
+    transform:translate3d(-50%,-40%,80px);
+ }
+ .card:hover .product .number {
+    transform: translateZ(40px);
+    opacity: 1;
+ }
+ .card:hover .product .ontisuka {
+    transform: translateZ(40px);
+    opacity: 0.85;
+ }
+ .card:hover .product .price {
+    transform: translateZ(20px);
+ }
+ .card:hover .product .title {
+    transform: translateZ(20px);
+ }
